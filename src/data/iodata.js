@@ -27,3 +27,15 @@ let getRobots = function(){
     }
     return robots;
 };
+
+let writeData = function (info){
+    fs.writeFile('output.txt',info,function(err){
+        if(err)
+            err("Error trying write the output data!");
+    });
+}
+module.exports = {
+    getMap: getMap,
+    getRobots: getRobots,
+    writeData: writeData
+};
