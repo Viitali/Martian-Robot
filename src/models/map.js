@@ -9,12 +9,11 @@ Map.fallOff = function(xAxis, yAxis){
     }
     return false;
 }
-Map.addScent = function(scentinfo){
-
+Map.addScent = function(scent){
+    this.scents.push(scent);
 }
-Map.haveScent = function(){
-    if(scentinfo){
-        return true;
-    }
-    return false;
+//return true if there is a scent
+Map.haveScent = function(robotNextStep) {
+    this.scents.find(this.scents, function (scent) {
+        return isEqual(scent, robotNextStep)}); 
 }
