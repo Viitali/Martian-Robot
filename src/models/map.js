@@ -14,9 +14,22 @@ Map.prototype.addScent = function(scent){
 }
 //return true if there is a scent
 Map.prototype.haveScent = function(robotNextStep) {
-    return this.scents.find(Element=> Element==robotNextStep);
-    /*this.scents.find(this.scents, function (scent) {
-        return isEqual(scent, robotNextStep)}); */
+    let scentExist=false;
+    for (let x of this.scents) {
+        if(robotNextStep.xAxis==x.xAxis && robotNextStep.yAxis==x.yAxis && robotNextStep.dir==x.dir){
+            scentExist=true;
+            break;
+        }
+    }
+    return scentExist;
+        
+
+   /* return this.scents.find(function(element){
+        if(element.xAxis==robotNextStep.xAxis && element.yAxis==robotNextStep.yAxis && element.direction==robotNextStep.dir){
+            return true;
+        }
+        return false;
+    });*/
 }
 
 module.exports = Map;

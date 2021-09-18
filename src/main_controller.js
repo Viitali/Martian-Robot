@@ -29,6 +29,8 @@ let executeInstructions = function(robot, map){
                 }
             }  
         }
+        //to see step by step the movement of the robot uncomment the line below
+        //console.log(robot);
     }
     let solution = robot.xAxis + " " + robot.yAxis + " " + robot.direction;
     if(robot.lost){
@@ -46,6 +48,7 @@ let main = function(){
     }
     return output;
 }
+main();
 module.exports = {
     main:main
 }
