@@ -22,7 +22,6 @@ let getRobots = function(){
         throw console.error("The robot info is incorrect, please check the input.txt file");
     while (r.length>0) {
         robots[i] = r.splice(0,2);
-        console.log(robots[i]);
         i++;
     }
     return robots;

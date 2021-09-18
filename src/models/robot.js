@@ -4,9 +4,10 @@ var Robot = function(xAxis, yAxis, direction, instructions){
     this.yAxis = yAxis;
     this.direction = direction;
     this.instructions = instructions;
+    this.lost=false;
 };
 
-Robot.turn = function (dir) {
+Robot.prototype.turn = function (dir) {
     var turning = {
         'R': {'N': 'E', 'E': 'S', 'S': 'W', 'W': 'N'},
         'L': {'N': 'W', 'E': 'N', 'S': 'E', 'W': 'S'}
@@ -15,7 +16,7 @@ Robot.turn = function (dir) {
     this.direction = turning[dir][this.direction];
 };
 
-Robot.move = function () {
+Robot.prototype.move = function () {
     var forwardDirection = {
         'N': {xAxis: this.xAxis, yAxis: this.yAxis + 1},
         'S': {xAxis: this.xAxis, yAxis: this.yAxis - 1},

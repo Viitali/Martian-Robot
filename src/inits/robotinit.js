@@ -5,17 +5,20 @@ let directions = ["N","E","S","W"]
 let Existentinstructions = ["L","R","F"];
 
 let robIni = function(rawdata){
+    let robots=[];
     for (let i = 0; i < rawdata.length; i++) {
         let coord = rawdata[i][0].split(" ");
         let robotdata={
-            xAxis:coord[0],
-            yAxis:coord[1],
+            xAxis: parseInt(coord[0]),
+            yAxis: parseInt(coord[1]),
             direction:coord[2],
             instructions:rawdata[i][1].split("")
         }
         checkdata(robotdata);
-        return new Robot(robotdata.xAxis,robotdata.yAxis,robotdata.direction,robotdata.instructions);    
+        
+        robots[i] = new Robot(robotdata.xAxis,robotdata.yAxis,robotdata.direction,robotdata.instructions);    
     }
+    return robots;
 }
 let checkdata = function(robotdata){
     //not a number

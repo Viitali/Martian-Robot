@@ -1,7 +1,6 @@
 const Map = require("../models/map.js")
 let maxMapSize=50;
 
-
 data={
     xAxis:"",
     yAxis:""
@@ -28,3 +27,4 @@ let checkdata = function (data){
         throw new Error("Map size cannot be less than 0");
     }
 }
+module.exports = { map:map};
