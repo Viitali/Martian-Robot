@@ -17,22 +17,26 @@ To run the application:
 
     1 Place or edit the "input.txt" file in the ./MartianRobot/src/data directory
   
-  ![image](https://user-images.githubusercontent.com/47821160/133906552-238d4377-71a2-4e69-b071-e30c02a03f86.png)
+  ![image](https://user-images.githubusercontent.com/47821160/133908036-a078abfc-7062-4091-86ac-ea658e5afa41.png)
   
   ![image](https://user-images.githubusercontent.com/47821160/133906813-893c6b02-b37f-4512-9032-b08f3ce13841.png)
 
 
     2 Open the main.js located in ./MartianRobot/src directory with Visual Studio Code
  
-    3 Write "cd src" in the console display
+    3 Go to the ./MartianRobot/src directory using the "cd" command in the console display
+    
+           3.a In case that you dont have the console opened, click "View" and then "Console":
+    
+   ![image](https://user-images.githubusercontent.com/47821160/133907903-6be46229-cf25-405c-841f-a9d4e0c79f40.png)
   
     4 Write "node main.js" in the console display
   
-  ![image](https://user-images.githubusercontent.com/47821160/133906791-7c35eb95-1a81-4ed8-be0b-35d8e778712d.png)
+   ![image](https://user-images.githubusercontent.com/47821160/133907993-c0602dfc-5e74-463a-a9cb-776dead32280.png)
 
     5 Check ./MartianRobot/src/data directory to see a new file named "output.txt" with the solution
   
-  ![image](https://user-images.githubusercontent.com/47821160/133906839-98f1bf52-6fd9-482a-9c84-f234a0d4d103.png)
+  ![image](https://user-images.githubusercontent.com/47821160/133908024-ad1c3faf-dfe4-4b84-99e8-0e7ab16a8a8b.png)
 
   ![image](https://user-images.githubusercontent.com/47821160/133906850-941dcbd8-c2c4-4414-bf31-52d0783156c9.png)
 
