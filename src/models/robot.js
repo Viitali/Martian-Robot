@@ -1,7 +1,9 @@
-var Robot = function(xAxis, yAxis, direction){
+
+var Robot = function(xAxis, yAxis, direction, instructions){
     this.xAxis = xAxis;
     this.yAxis = yAxis;
     this.direction = direction;
+    this.instructions = instructions;
 };
 
 Robot.turn = function (dir) {

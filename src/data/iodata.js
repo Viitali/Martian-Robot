@@ -1,10 +1,10 @@
 const fs = require('fs');
-
+let filepath = "./data/input.txt"
 let map;
 let robots;
 
 let parsedata = function(){
-    let data = fs.readFileSync('input.txt', 'utf8');
+    let data = fs.readFileSync(filepath, 'utf8');
     const arr = data.toString().replace(/\r\n/g,'\n').split('\n');
     //console.log(arr);
     return arr;
