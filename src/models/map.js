@@ -22,14 +22,5 @@ Map.prototype.haveScent = function(robotNextStep) {
         }
     }
     return scentExist;
-        
-
-   /* return this.scents.find(function(element){
-        if(element.xAxis==robotNextStep.xAxis && element.yAxis==robotNextStep.yAxis && element.direction==robotNextStep.dir){
-            return true;
-        }
-        return false;
-    });*/
 }
-
 module.exports = Map;
